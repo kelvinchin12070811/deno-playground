@@ -1,0 +1,10 @@
+services:
+  deno-playground:
+    build: .
+    restart: "unless-stopped"
+    tmpfs:
+      - /home/playground
+    volumes:
+      - /var/deno-playground/vscode:/root/.vscode
+      - /var/deno-playground/vscode-server:/root/.vscode-server
+    hostname: deno-playground
