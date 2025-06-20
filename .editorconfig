@@ -1,0 +1,9 @@
+end_of_line = lf
+tab_width = 4
+charset = utf-8
+root = ture
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{rb, rbw, tsx, jsx, html}]
+tab_width = 2
